@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "es6": true
     },
     "extends": [
         'plugin:jest/recommended',
@@ -9,7 +10,8 @@ module.exports = {
     ],
     "parserOptions": {
         "ecmaVersion": 12,
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": 6 // or 7,8,9
     },
     "rules": {
         'no-console': 0,

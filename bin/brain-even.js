@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { name } from '../src/cli.js';
+import {name} from '../src/cli.js';
 import readlineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
@@ -13,20 +13,26 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 const isEven = () => {
     
-    const numbers = [[15, 'no'], [6, 'yes'], [7, 'no']];
+    let answerCorrect;
 
-    for (let i = 0; i < numbers.length; i++) {
+    for (let i = 0; i < 3; i++) {
+
+        const number = Math.floor(Math.random() * 100) + 1;
+
+        if (number % 2 === 0) {
+            answerCorrect = 'yes';
+        } else {
+            answerCorrect = 'no';
+        }
         
-        console.log(`Question: ${numbers[i][0]}`);
+        console.log(`Question: ${number}`);
 
         const answer = readlineSync.question('Your answer: ');
 
-        //console.log(`Your answer: ${answer}`);
-
-        if ((numbers[i][0] % 2 === 0 && answer === 'yes') || (numbers[i][0] !== 0 && answer === 'no')) {
+        if (answerCorrect === answer) {
             console.log('Correct!');
         } else {
-            console.log(`${answer} is wrong answer ;(. Correct answer was ${numbers[i][1]}.\nLet's try again, ${userName}`);
+            console.log(`${answer} is wrong answer ;(. Correct answer was ${answerCorrect}.\nLet's try again, ${userName}`);
             return;
         }
     }
