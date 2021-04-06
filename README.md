@@ -5,4 +5,4 @@
 
 ![example workflow](https://github.com/vladbeer/frontend-project-lvl1/actions/workflows/.github/workflows/superlinter.yml/badge.svg)
 
-<a href="https://asciinema.org/a/Rs5TZTMOFtxlsUHTdNdEo8pXY" ></a>
+[![asciicast](https://asciinema.org/a/Rs5TZTMOFtxlsUHTdNdEo8pXY.svg)](https://asciinema.org/a/Rs5TZTMOFtxlsUHTdNdEo8pXY)
