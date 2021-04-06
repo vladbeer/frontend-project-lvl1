@@ -1,8 +1,6 @@
-install: install-deps
+install: npm ci
 
 run: bin/brain-games.js
-
-install-deps: npm ci
 
 lint: npx eslint .
 
