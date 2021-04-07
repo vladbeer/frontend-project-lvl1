@@ -6,3 +6,5 @@
 ![example workflow](https://github.com/vladbeer/frontend-project-lvl1/actions/workflows/.github/workflows/superlinter.yml/badge.svg)
 
 [![asciicast](https://asciinema.org/a/Rs5TZTMOFtxlsUHTdNdEo8pXY.svg)](https://asciinema.org/a/Rs5TZTMOFtxlsUHTdNdEo8pXY)
+
+[![asciicast](https://asciinema.org/a/Apfn0RReQw3uvm82WwNM7wnP3.svg)](https://asciinema.org/a/Apfn0RReQw3uvm82WwNM7wnP3)
