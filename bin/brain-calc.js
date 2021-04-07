@@ -10,34 +10,41 @@ const userName = name()
 
 console.log(`Hello, ${userName}!`);
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('What is the result of the expression?');
 
-const isEven = () => {
-    
-    let answerCorrect;
+const isCalc = () => {
+
+    const operand = ['', '+', '-', '*'];
 
     for (let i = 0; i < 3; i++) {
-
-        const number = randomNunber(1, 100);
-
-        if (number % 2 === 0) {
-            answerCorrect = 'yes';
-        } else {
-            answerCorrect = 'no';
-        }
         
-        console.log(`Question: ${number}`);
+        const number1 = randomNunber(1, 10);
+        const number2 = randomNunber(1, 10);
+        const oper = randomNunber(0, 3);
+
+        let answerCorrect;
+
+        if (operand[oper] === '+') {
+            answerCorrect = number1 + number2;
+        } else if (operand[oper] === '-') {
+            answerCorrect = number1 - number2;
+        } else {
+            answerCorrect = number1 * number2;
+        }
+
+        console.log(`Question: ${number1} ${operand[oper]} ${number2}`);
 
         const answer = readlineSync.question('Your answer: ');
 
-        if (answerCorrect === answer) {
+        if (answerCorrect === +answer) {
             console.log('Correct!');
         } else {
             console.log(`${answer} is wrong answer ;(. Correct answer was ${answerCorrect}.\nLet's try again, ${userName}`);
             return;
         }
+
     }
     console.log(`Congratulations, ${userName}!`);
 }
 
-isEven();
+isCalc();
