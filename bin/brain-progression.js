@@ -29,7 +29,7 @@ const isProgression = () => {
         const answerCorrect = arr[pass];
         arr[pass] = '..';
 
-        console.log(`Question: ${arr}`);
+        console.log(`Question: ${arr.join(' ')}`);
 
         const answer = readlineSync.question('Your answer: ');
 
