@@ -10,4 +10,19 @@ const gsd = (a, b) => {
     return gsd(b, a % b);
 }
 
-export { randomNunber, gsd };
+const isPrime = (num) => {
+
+    if (num === 1) {
+        return true;
+    }
+
+    for (let i = 2; i < num / 2; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+export { randomNunber, gsd, isPrime };
