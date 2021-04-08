@@ -3,7 +3,7 @@
 
 <a href="https://codeclimate.com/github/vladbeer/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/88f6d42d68f41cd5ef3d/maintainability" /></a>
 
-![example workflow](https://github.com/vladbeer/frontend-project-lvl1/actions/workflows/.github/workflows/superlinter.yml/badge.svg)
+[![GitHub Super-Linter](https://github.com/vladbeer/frontend-project-lvl1/actions/workflows/.github/workflows/superlinter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 [![asciicast](https://asciinema.org/a/Rs5TZTMOFtxlsUHTdNdEo8pXY.svg)](https://asciinema.org/a/Rs5TZTMOFtxlsUHTdNdEo8pXY)
 
