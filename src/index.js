@@ -2,4 +2,12 @@ const randomNunber = (min, max) => {
     return Math.floor(Math.random() * (max - min) + 1) + min;
 }
 
-export { randomNunber };
+const gsd = (a, b) => {
+    if (!b) {
+        return a;
+    }
+
+    return gsd(b, a % b);
+}
+
+export { randomNunber, gsd };
