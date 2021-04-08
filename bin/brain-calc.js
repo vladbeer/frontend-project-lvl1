@@ -39,7 +39,8 @@ const isCalc = () => {
         if (answerCorrect === +answer) {
             console.log('Correct!');
         } else {
-            console.log(`${answer} is wrong answer ;(. Correct answer was ${answerCorrect}.\nLet's try again, ${userName}`);
+            console.log(`${answer} is wrong answer ;(. Correct answer was ${answerCorrect}.`);
+            console.log(`Let's try again, ${userName}!`);
             return;
         }
 
